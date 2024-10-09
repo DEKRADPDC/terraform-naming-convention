@@ -4294,6 +4294,50 @@
     }
   },
   {
+    "resourceType": "azurerm_windows_function_app",
+    "abbreviation": "func",
+    "minLength": 2,
+    "maxLength": 60,
+    "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
+    "resourceType": "azurerm_linux_function_app",
+    "abbreviation": "func",
+    "minLength": 2,
+    "maxLength": 60,
+    "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_app_service_plan",
     "abbreviation": "plan",
     "minLength": 1,
@@ -5249,6 +5293,28 @@
       "useEnvironment": true,
       "useLowerCase": true,
       "useSeparator": false,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
+    "resourceType": "azurerm_cognitive_deployment",
+    "abbreviation": "oai",
+    "minLength": 2,
+    "maxLength": 64,
+    "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,63}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
       "denyDoubleHyphens": false,
       "namePrecedence": [
         "prefix",
