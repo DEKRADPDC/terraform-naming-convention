@@ -1578,7 +1578,7 @@
     }
   },
   {
-    "resourceType": "azurerm_recovery_services_vault_backup_police",
+    "resourceType": "azurerm_backup_policy_file_share",
     "abbreviation": "rsvbp",
     "minLength": 3,
     "maxLength": 150,
