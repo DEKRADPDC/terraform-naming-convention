@@ -808,7 +808,7 @@
     }
   },
   {
-    "resourceType": "azurerm_containerGroups",
+    "resourceType": "azurerm_container_group",
     "abbreviation": "cg",
     "minLength": 1,
     "maxLength": 63,
@@ -1161,6 +1161,28 @@
   },
   {
     "resourceType": "azurerm_postgresql_server",
+    "abbreviation": "psql",
+    "minLength": 3,
+    "maxLength": 63,
+    "validationRegex": "^[a-z0-9][a-zA-Z0-9-]{1,61}[a-z0-9]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
+    "resourceType": "azurerm_postgresql_flexible_server",
     "abbreviation": "psql",
     "minLength": 3,
     "maxLength": 63,
