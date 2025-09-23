@@ -1248,6 +1248,28 @@
     }
   },
   {
+    "resourceType": "azurerm_postgresql_flexible_server_database",
+    "abbreviation": "psqldb",
+    "minLength": 1,
+    "maxLength": 63,
+    "validationRegex": "^[a-zA-Z0-9-_]{1,63}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_postgresql_virtual_network_rule",
     "abbreviation": "psqlvn",
     "minLength": 1,
