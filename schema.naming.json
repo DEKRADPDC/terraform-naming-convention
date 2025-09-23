@@ -3140,7 +3140,7 @@
     "configuration": {
       "useEnvironment": true,
       "useLowerCase": false,
-      "useSeparator": true,
+      "useSeparator": false,
       "denyDoubleHyphens": true,
       "namePrecedence": [
         "prefix",
