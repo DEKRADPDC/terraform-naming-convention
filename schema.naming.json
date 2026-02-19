@@ -808,6 +808,50 @@
     }
   },
   {
+    "resourceType": "azurerm_container_app_environment",
+    "abbreviation": "cae",
+    "minLength": 1,
+    "maxLength": 32,
+    "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,30}[a-zA-Z0-9]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": true,
+      "useSeparator": true,
+      "denyDoubleHyphens": true,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
+    "resourceType": "azurerm_container_app_job",
+    "abbreviation": "caj",
+    "minLength": 1,
+    "maxLength": 32,
+    "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,30}[a-zA-Z0-9]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": true,
+      "useSeparator": true,
+      "denyDoubleHyphens": true,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_container_group",
     "abbreviation": "cg",
     "minLength": 1,
