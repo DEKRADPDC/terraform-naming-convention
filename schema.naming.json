@@ -5437,5 +5437,27 @@
         "suffixes"
       ]
     }
-  }
+  },
+  {
+    "resourceType": "azurerm_fabric_capacity",
+    "abbreviation": "fab",
+    "minLength": 3,
+    "maxLength": 63,
+    "validationRegex": "^[a-z][0-9a-z]{0,62}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": false,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
 ]
