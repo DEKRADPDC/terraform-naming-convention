@@ -5459,5 +5459,27 @@
         "suffixes"
       ]
     }
+  },
+  {
+    "resourceType": "azurerm_monitor_diagnostic_setting",
+    "abbreviation": "diag",
+    "minLength": 1,
+    "maxLength": 128,
+    "validationRegex": "^[0-9A-Za-z][0-9A-Za-z-]{0,58}[0-9a-zA-Z]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
   }
 ]
