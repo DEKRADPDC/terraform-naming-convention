@@ -3202,7 +3202,7 @@
     "abbreviation": "stt",
     "minLength": 3,
     "maxLength": 63,
-    "validationRegex": "^[a-z0-9][a-z0-9-]{1,61}[a-z0-9]$",
+    "validationRegex": "^[a-z0-9][a-zA-Z0-9-]{1,61}[a-z0-9]$",
     "configuration": {
       "useEnvironment": true,
       "useLowerCase": false,
