@@ -1776,6 +1776,28 @@
     }
   },
   {
+    "resourceType": "azurerm_data_factory_managed_private_endpoint",
+    "abbreviation": "pep-adf",
+    "minLength": 2,
+    "maxLength": 64,
+    "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-_]{1,62}[a-zA-Z0-9]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_data_lake_analytics_account",
     "abbreviation": "dla",
     "minLength": 3,
