@@ -4250,6 +4250,28 @@
       ]
     }
   },
+   {
+    "resourceType": "azurerm_eventgrid_system_topic",
+    "abbreviation": "egst",
+    "minLength": 3,
+    "maxLength": 128,
+    "validationRegex": "^[a-zA-Z0-9-]{3,128}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
   {
     "resourceType": "azurerm_eventgrid_event_subscription",
     "abbreviation": "egs",
