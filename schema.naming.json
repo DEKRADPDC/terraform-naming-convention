@@ -528,6 +528,28 @@
     }
   },
   {
+    "resourceType": "azurerm_managed_redis",
+    "abbreviation": "amr",
+    "minLength": 1,
+    "maxLength": 63,
+    "validationRegex": "^[a-zA-Z0-9][a-zA-Z0-9-]{0,61}[a-zA-Z0-9]$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": true,
+      "useSeparator": true,
+      "denyDoubleHyphens": true,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_cdn_profile",
     "abbreviation": "cdnprof",
     "minLength": 1,
