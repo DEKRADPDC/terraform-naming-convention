@@ -1666,6 +1666,28 @@
     }
   },
   {
+    "resourceType": "azurerm_data_factory_linked_service_azure_function",
+    "abbreviation": "adfsvfunc",
+    "minLength": 1,
+    "maxLength": 260,
+    "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "azurerm_recovery_services_vault",
     "abbreviation": "rsv",
     "minLength": 2,
@@ -1756,6 +1778,28 @@
   {
     "resourceType": "azurerm_data_factory_linked_service_sql_server",
     "abbreviation": "adfsvmssql",
+    "minLength": 1,
+    "maxLength": 260,
+    "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
+    "resourceType": "azurerm_data_factory_linked_service_azure_sql_database",
+    "abbreviation": "adfsvsqldb",
     "minLength": 1,
     "maxLength": 260,
     "validationRegex": "^[a-zA-Z0-9][^<>*%:.?+/]{0,259}$",
