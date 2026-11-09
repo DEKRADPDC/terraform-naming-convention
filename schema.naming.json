@@ -4647,6 +4647,28 @@
     }
   },
   {
+    "resourceType": "azurerm_monitor_private_link_scope",
+    "abbreviation": "ampls",
+    "minLength": 1,
+    "maxLength": 255,
+    "validationRegex": "^[a-zA-Z0-9-]+$",
+    "configuration": {
+      "useEnvironment": true,
+      "useLowerCase": false,
+      "useSeparator": true,
+      "denyDoubleHyphens": false,
+      "namePrecedence": [
+        "prefix",
+        "prefixes",
+        "abbreviation",
+        "name",
+        "environment",
+        "location",
+        "suffixes"
+      ]
+    }
+  },
+  {
     "resourceType": "aks_node_pool_linux",
     "abbreviation": "npl",
     "minLength": 1,
